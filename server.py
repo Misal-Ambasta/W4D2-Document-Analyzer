@@ -1,6 +1,5 @@
 """
 MCP Server Setup for Document Analyzer
-Phase 2: FastMCP server, document loading, storage/retrieval functions
 """
 from mcp.server.fastmcp import FastMCP
 import json
@@ -36,7 +35,6 @@ def get_document_by_id(doc_id: str) -> Dict[str, Any]:
                 return doc
     return {}
 
-# --- Phase 3: MCP Tools Implementation ---
 from typing import Optional
 
 @mcp.tool()
